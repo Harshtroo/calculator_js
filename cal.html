@@ -9,23 +9,32 @@
         <!-- <div class="first"></div>
         <div class="second"></div> -->
         <textarea type="text" id="inputtxt"></textarea>
-        <button value="1" onclick="display(1)">1</button>
-        <button value="2" onclick="display(2)">2</button>
-        <button value="3" onclick="display(3)">3</button>
-        <button value="4" onclick="display(4)">4</button>
-        <button value="5" onclick="display(5)">5</button>
-        <button value="6" onclick="display(6)">6</button>
-        <button value="7" onclick="display(7)">7</button>
-        <button value="8" onclick="display(8)">8</button>
-        <button value="9" onclick="display(9)">9</button>
-        <button value="0" onclick="display(0)">0</button>
-        <div class="operator">
-            <button value="+" onclick="display('+')" id="sum">+</button>
-            <button value="-" onclick="display('-')" id="sub">-</button>
-            <button value="/" onclick="display('/')" id="div">/</button>
-            <button value="*" onclick="display('*')" id="mul">*</button>
-            <button onclick="operators()">=</button>
+        <div>
+            <button value="1" onclick="display(1)">1</button>
+            <button value="2" onclick="display(2)">2</button>
+            <button value="3" onclick="display(3)">3</button>
+            <button class="operator" value="+" onclick="display('+')" id="sum">+</button>
             <button onclick="ClearFields(0)">C</button>
+        </div>
+        <div>
+            <button value="4" onclick="display(4)">4</button>
+            <button value="5" onclick="display(5)">5</button>
+            <button value="6" onclick="display(6)">6</button>
+            <button class="operator" value="-" onclick="display('-')" id="sub">-</button>
+        </div>
+        <div>
+            <button value="7" onclick="display(7)">7</button>
+            <button value="8" onclick="display(8)">8</button>
+            <button value="9" onclick="display(9)">9</button>
+            <button class="operator" value="/" onclick="display('/')" id="div">/</button>
+        </div>
+        <div>
+            <button>.</button>
+            <button value="0" onclick="display(0)">0</button>
+            <button onclick="operators()">=</button>
+            <button class="operator" value="*" onclick="display('*')" id="mul">*</button>
+        </div>
+        <div>
         </div>
     </div>
     <script>
@@ -44,7 +53,7 @@
             // let key = document.getElementById("operator")
             // const operatorllist = ['+', '-', '*', '/']
             // const inputval = document.getElementById("inputtxt").value
-            
+
             // console.log(typeof(inputval));
             let x = document.getElementById('inputtxt').value
             // console.log(x);
@@ -52,7 +61,7 @@
             document.getElementById('inputtxt').value = y
             // console.log(y)
 
-            
+
         }
         // clear the result
         function clearResult() {
@@ -61,10 +70,10 @@
 
             // for (let i=0;i<key.length;i++){
             //     key[i].onclick = function(e){
-            //         const input = 
+            //         const input =
             //     }
             // }
-        
+
 
     </script>
 
